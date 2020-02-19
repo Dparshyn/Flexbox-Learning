@@ -46,15 +46,17 @@
 
 			}
 			.bl {
-			flex: 1 1 200px;
+			flex: 1 1 300px;
 			text-align: center;
+			display: flex;
+			flex-flow: row wrap;
 			}
-			.fl1 {}
+			.fl1 {flex: 1 1 100%;}
 			.fl2 {}
 			.fl3 {}
 			.fl4 {}
 			.fl5 {}
-			.fl6 {}
+			.fl6 {flex: 1 1 100%;}
 
 			h3 {
 				color: #3b65c7;
@@ -64,10 +66,22 @@
 			a.button {
 				background: #3b65c7;
 				color: #fff;
+				padding: 5px 10px;
+				border-radius: 2px;
+				text-decoration: none;
+				transition: 0.3s;
 			}
-			.image {margin: 10px; }
-			.text {margin: 10px;}
-
+			a.button:hover {
+				background: #c70000;
+			}
+			.image {
+				margin: 10px;
+				flex: 1 1 200px; /* flexgrow flexshrink flexbasis */
+				}
+			.text {
+				margin: 10px;
+				flex: 1 1 150px;
+				}
 			.image img {width: 100%; height: auto;}
 
 		</style>
@@ -124,7 +138,6 @@
 					<a href="#" class="button">Читать...</a>
 				</div>
 			</div>
-			
 
 		</div>
 
